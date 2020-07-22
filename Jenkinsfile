@@ -14,7 +14,11 @@ stages {
 
 		}
 	}
-
+	stage('building java project'){
+		steps {
+			sh 'mvn clean package'
+		}
+	}
  }
 
 }
